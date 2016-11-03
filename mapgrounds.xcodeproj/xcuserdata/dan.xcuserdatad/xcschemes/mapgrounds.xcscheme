@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "371F84A81878B42800B0242C"
-               BuildableName = "mapgrounds.app"
+               BuildableName = "Mapgrounds.app"
                BlueprintName = "mapgrounds"
                ReferencedContainer = "container:mapgrounds.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "371F84A81878B42800B0242C"
-            BuildableName = "mapgrounds.app"
+            BuildableName = "Mapgrounds.app"
             BlueprintName = "mapgrounds"
             ReferencedContainer = "container:mapgrounds.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "371F84A81878B42800B0242C"
-            BuildableName = "mapgrounds.app"
+            BuildableName = "Mapgrounds.app"
             BlueprintName = "mapgrounds"
             ReferencedContainer = "container:mapgrounds.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "371F84A81878B42800B0242C"
-            BuildableName = "mapgrounds.app"
+            BuildableName = "Mapgrounds.app"
             BlueprintName = "mapgrounds"
             ReferencedContainer = "container:mapgrounds.xcodeproj">
          </BuildableReference>

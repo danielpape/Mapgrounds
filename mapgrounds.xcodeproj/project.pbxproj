@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371780E81878C9350036C90B /* UITextfieldScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371780E71878C9350036C90B /* UITextfieldScrollViewController.m */; };
+		371780F2187A083D0036C90B /* searchbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F0187A083D0036C90B /* searchbubble.png */; };
+		371780F3187A083D0036C90B /* searchbubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F1187A083D0036C90B /* searchbubble@2x.png */; };
+		371780F5187A10000036C90B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371780F4187A10000036C90B /* Social.framework */; };
+		371780F8187B4F110036C90B /* mapsarebeautiful001.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F6187B4F110036C90B /* mapsarebeautiful001.png */; };
+		371780F9187B4F110036C90B /* mapsarebeautiful001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F7187B4F110036C90B /* mapsarebeautiful001@2x.png */; };
+		371780FC187B58FA0036C90B /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780FA187B58FA0036C90B /* plus.png */; };
+		371780FD187B58FA0036C90B /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780FB187B58FA0036C90B /* plus@2x.png */; };
+		371780FF187B67850036C90B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371780FE187B67850036C90B /* StoreKit.framework */; };
+		37178102187D45310036C90B /* purchaseViewImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 37178100187D45310036C90B /* purchaseViewImage.png */; };
+		37178103187D45310036C90B /* purchaseViewImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37178101187D45310036C90B /* purchaseViewImage@2x.png */; };
+		37178106187DEFB80036C90B /* cameraroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 37178104187DEFB80036C90B /* cameraroll.png */; };
+		37178107187DEFB80036C90B /* cameraroll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37178105187DEFB80036C90B /* cameraroll@2x.png */; };
+		3717810A187E874A0036C90B /* SKProduct+priceAsString.m in Sources */ = {isa = PBXBuildFile; fileRef = 37178109187E874A0036C90B /* SKProduct+priceAsString.m */; };
 		371F84AD1878B42800B0242C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84AC1878B42800B0242C /* Foundation.framework */; };
 		371F84AF1878B42800B0242C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84AE1878B42800B0242C /* CoreGraphics.framework */; };
 		371F84B11878B42800B0242C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84B01878B42800B0242C /* UIKit.framework */; };
@@ -17,11 +31,12 @@
 		371F84C31878B42800B0242C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371F84C11878B42800B0242C /* Main_iPad.storyboard */; };
 		371F84C61878B42800B0242C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371F84C51878B42800B0242C /* ViewController.m */; };
 		371F84C81878B42800B0242C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371F84C71878B42800B0242C /* Images.xcassets */; };
-		371F84CF1878B42800B0242C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84CE1878B42800B0242C /* XCTest.framework */; };
 		371F84D01878B42800B0242C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84AC1878B42800B0242C /* Foundation.framework */; };
 		371F84D11878B42800B0242C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84B01878B42800B0242C /* UIKit.framework */; };
 		371F84D91878B42800B0242C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 371F84D71878B42800B0242C /* InfoPlist.strings */; };
 		371F84DB1878B42800B0242C /* mapgroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371F84DA1878B42800B0242C /* mapgroundsTests.m */; };
+		371F84F31878B6BB00B0242C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F84F21878B6BB00B0242C /* ImageIO.framework */; };
+		371F85011878BAD700B0242C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371F85001878BAD700B0242C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +50,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		371F84A91878B42800B0242C /* mapgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		371780E61878C9350036C90B /* UITextfieldScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextfieldScrollViewController.h; sourceTree = "<group>"; };
+		371780E71878C9350036C90B /* UITextfieldScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextfieldScrollViewController.m; sourceTree = "<group>"; };
+		371780F0187A083D0036C90B /* searchbubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbubble.png; sourceTree = "<group>"; };
+		371780F1187A083D0036C90B /* searchbubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbubble@2x.png"; sourceTree = "<group>"; };
+		371780F4187A10000036C90B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		371780F6187B4F110036C90B /* mapsarebeautiful001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapsarebeautiful001.png; sourceTree = "<group>"; };
+		371780F7187B4F110036C90B /* mapsarebeautiful001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapsarebeautiful001@2x.png"; sourceTree = "<group>"; };
+		371780FA187B58FA0036C90B /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		371780FB187B58FA0036C90B /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
+		371780FE187B67850036C90B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		37178100187D45310036C90B /* purchaseViewImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purchaseViewImage.png; sourceTree = "<group>"; };
+		37178101187D45310036C90B /* purchaseViewImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchaseViewImage@2x.png"; sourceTree = "<group>"; };
+		37178104187DEFB80036C90B /* cameraroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraroll.png; sourceTree = "<group>"; };
+		37178105187DEFB80036C90B /* cameraroll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraroll@2x.png"; sourceTree = "<group>"; };
+		37178108187E874A0036C90B /* SKProduct+priceAsString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+priceAsString.h"; sourceTree = "<group>"; };
+		37178109187E874A0036C90B /* SKProduct+priceAsString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+priceAsString.m"; sourceTree = "<group>"; };
+		371F84A91878B42800B0242C /* Mapgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		371F84AC1878B42800B0242C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		371F84AE1878B42800B0242C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		371F84B01878B42800B0242C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -51,10 +82,11 @@
 		371F84C51878B42800B0242C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		371F84C71878B42800B0242C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		371F84CD1878B42800B0242C /* mapgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapgroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		371F84CE1878B42800B0242C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		371F84D61878B42800B0242C /* mapgroundsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mapgroundsTests-Info.plist"; sourceTree = "<group>"; };
 		371F84D81878B42800B0242C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		371F84DA1878B42800B0242C /* mapgroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapgroundsTests.m; sourceTree = "<group>"; };
+		371F84F21878B6BB00B0242C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		371F85001878BAD700B0242C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371780FF187B67850036C90B /* StoreKit.framework in Frameworks */,
+				371780F5187A10000036C90B /* Social.framework in Frameworks */,
+				371F85011878BAD700B0242C /* MapKit.framework in Frameworks */,
+				371F84F31878B6BB00B0242C /* ImageIO.framework in Frameworks */,
 				371F84AF1878B42800B0242C /* CoreGraphics.framework in Frameworks */,
 				371F84B11878B42800B0242C /* UIKit.framework in Frameworks */,
 				371F84AD1878B42800B0242C /* Foundation.framework in Frameworks */,
@@ -72,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371F84CF1878B42800B0242C /* XCTest.framework in Frameworks */,
 				371F84D11878B42800B0242C /* UIKit.framework in Frameworks */,
 				371F84D01878B42800B0242C /* Foundation.framework in Frameworks */,
 			);
@@ -94,7 +129,7 @@
 		371F84AA1878B42800B0242C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				371F84A91878B42800B0242C /* mapgrounds.app */,
+				371F84A91878B42800B0242C /* Mapgrounds.app */,
 				371F84CD1878B42800B0242C /* mapgroundsTests.xctest */,
 			);
 			name = Products;
@@ -103,10 +138,13 @@
 		371F84AB1878B42800B0242C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				371780FE187B67850036C90B /* StoreKit.framework */,
+				371780F4187A10000036C90B /* Social.framework */,
+				371F85001878BAD700B0242C /* MapKit.framework */,
+				371F84F21878B6BB00B0242C /* ImageIO.framework */,
 				371F84AC1878B42800B0242C /* Foundation.framework */,
 				371F84AE1878B42800B0242C /* CoreGraphics.framework */,
 				371F84B01878B42800B0242C /* UIKit.framework */,
-				371F84CE1878B42800B0242C /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +152,8 @@
 		371F84B21878B42800B0242C /* mapgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				371780E61878C9350036C90B /* UITextfieldScrollViewController.h */,
+				371780E71878C9350036C90B /* UITextfieldScrollViewController.m */,
 				371F84BB1878B42800B0242C /* AppDelegate.h */,
 				371F84BC1878B42800B0242C /* AppDelegate.m */,
 				371F84BE1878B42800B0242C /* Main_iPhone.storyboard */,
@@ -129,6 +169,18 @@
 		371F84B31878B42800B0242C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37178108187E874A0036C90B /* SKProduct+priceAsString.h */,
+				37178109187E874A0036C90B /* SKProduct+priceAsString.m */,
+				37178104187DEFB80036C90B /* cameraroll.png */,
+				37178105187DEFB80036C90B /* cameraroll@2x.png */,
+				37178100187D45310036C90B /* purchaseViewImage.png */,
+				37178101187D45310036C90B /* purchaseViewImage@2x.png */,
+				371780FA187B58FA0036C90B /* plus.png */,
+				371780FB187B58FA0036C90B /* plus@2x.png */,
+				371780F6187B4F110036C90B /* mapsarebeautiful001.png */,
+				371780F7187B4F110036C90B /* mapsarebeautiful001@2x.png */,
+				371780F0187A083D0036C90B /* searchbubble.png */,
+				371780F1187A083D0036C90B /* searchbubble@2x.png */,
 				371F84B41878B42800B0242C /* mapgrounds-Info.plist */,
 				371F84B51878B42800B0242C /* InfoPlist.strings */,
 				371F84B81878B42800B0242C /* main.m */,
@@ -172,7 +224,7 @@
 			);
 			name = mapgrounds;
 			productName = mapgrounds;
-			productReference = 371F84A91878B42800B0242C /* mapgrounds.app */;
+			productReference = 371F84A91878B42800B0242C /* Mapgrounds.app */;
 			productType = "com.apple.product-type.application";
 		};
 		371F84CC1878B42800B0242C /* mapgroundsTests */ = {
@@ -202,6 +254,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Daniel Pape";
 				TargetAttributes = {
+					371F84A81878B42800B0242C = {
+						DevelopmentTeam = 6XK8CTGKE3;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					371F84CC1878B42800B0242C = {
 						TestTargetID = 371F84A81878B42800B0242C;
 					};
@@ -231,10 +291,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371780F9187B4F110036C90B /* mapsarebeautiful001@2x.png in Resources */,
+				37178107187DEFB80036C90B /* cameraroll@2x.png in Resources */,
+				371780FC187B58FA0036C90B /* plus.png in Resources */,
+				37178103187D45310036C90B /* purchaseViewImage@2x.png in Resources */,
 				371F84C31878B42800B0242C /* Main_iPad.storyboard in Resources */,
+				371780F2187A083D0036C90B /* searchbubble.png in Resources */,
 				371F84C81878B42800B0242C /* Images.xcassets in Resources */,
 				371F84C01878B42800B0242C /* Main_iPhone.storyboard in Resources */,
 				371F84B71878B42800B0242C /* InfoPlist.strings in Resources */,
+				371780F8187B4F110036C90B /* mapsarebeautiful001.png in Resources */,
+				37178106187DEFB80036C90B /* cameraroll.png in Resources */,
+				37178102187D45310036C90B /* purchaseViewImage.png in Resources */,
+				371780FD187B58FA0036C90B /* plus@2x.png in Resources */,
+				371780F3187A083D0036C90B /* searchbubble@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				371F84C61878B42800B0242C /* ViewController.m in Sources */,
+				3717810A187E874A0036C90B /* SKProduct+priceAsString.m in Sources */,
 				371F84BD1878B42800B0242C /* AppDelegate.m in Sources */,
 				371F84B91878B42800B0242C /* main.m in Sources */,
+				371780E81878C9350036C90B /* UITextfieldScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +420,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +454,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -392,10 +466,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dan/Downloads/GoogleMaps-iOS-1.6.1/GoogleMapsSDKDemos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapgrounds/mapgrounds-Prefix.pch";
 				INFOPLIST_FILE = "mapgrounds/mapgrounds-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Mapgrounds;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +488,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dan/Downloads/GoogleMaps-iOS-1.6.1/GoogleMapsSDKDemos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapgrounds/mapgrounds-Prefix.pch";
 				INFOPLIST_FILE = "mapgrounds/mapgrounds-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Mapgrounds;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +566,7 @@
 				371F84E01878B42800B0242C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		371F84E11878B42800B0242C /* Build configuration list for PBXNativeTarget "mapgroundsTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +575,7 @@
 				371F84E31878B42800B0242C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
