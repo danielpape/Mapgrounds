@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3706670A1E22AB58000BFB4E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370667091E22AB58000BFB4E /* Launch Screen.storyboard */; };
 		371780E81878C9350036C90B /* UITextfieldScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371780E71878C9350036C90B /* UITextfieldScrollViewController.m */; };
 		371780F2187A083D0036C90B /* searchbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F0187A083D0036C90B /* searchbubble.png */; };
 		371780F3187A083D0036C90B /* searchbubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 371780F1187A083D0036C90B /* searchbubble@2x.png */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370667091E22AB58000BFB4E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 		371780E61878C9350036C90B /* UITextfieldScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextfieldScrollViewController.h; sourceTree = "<group>"; };
 		371780E71878C9350036C90B /* UITextfieldScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextfieldScrollViewController.m; sourceTree = "<group>"; };
 		371780F0187A083D0036C90B /* searchbubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbubble.png; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				371F84C41878B42800B0242C /* ViewController.h */,
 				371F84C51878B42800B0242C /* ViewController.m */,
 				371F84C71878B42800B0242C /* Images.xcassets */,
+				370667091E22AB58000BFB4E /* Launch Screen.storyboard */,
 				371F84B31878B42800B0242C /* Supporting Files */,
 			);
 			path = mapgrounds;
@@ -294,6 +297,7 @@
 				371780F9187B4F110036C90B /* mapsarebeautiful001@2x.png in Resources */,
 				37178107187DEFB80036C90B /* cameraroll@2x.png in Resources */,
 				371780FC187B58FA0036C90B /* plus.png in Resources */,
+				3706670A1E22AB58000BFB4E /* Launch Screen.storyboard in Resources */,
 				37178103187D45310036C90B /* purchaseViewImage@2x.png in Resources */,
 				371F84C31878B42800B0242C /* Main_iPad.storyboard in Resources */,
 				371780F2187A083D0036C90B /* searchbubble.png in Resources */,

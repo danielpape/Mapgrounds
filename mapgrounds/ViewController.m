@@ -46,8 +46,6 @@ NSArray *validProducts;
     
     // 3
     [self.map1 setRegion:viewRegion animated:YES];
-    
-    [self setRoundedMapView:self.map1 toDiameter:260];
     [self setRoundedCorners:self.saveView toDiameter:20];
     [self setRoundedCorners:self.introView toDiameter:20];
     [self setRoundedCorners:self.shareView toDiameter:20];
@@ -77,7 +75,8 @@ NSArray *validProducts;
     [self.caption setCenter:CGPointMake(160, 375)];
 
     purchased = YES;
-    
+    [self setRoundedMapView:self.map1 toDiameter:self.map1.bounds.size.width];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -372,14 +371,14 @@ NSArray *validProducts;
     self.searchBubbleView.alpha=0;
     [self.shareView setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height+self.shareView.bounds.size.height)];
     [self.colourMenuView setCenter:CGPointMake(self.view.bounds.size.width/2, -40)];
-    [self setRoundedMapView:self.map1 toDiameter:220];
+    [self setRoundedMapView:self.map1 toDiameter:315];
     if(IS_IPHONE_5){
-        CGRect saveSize =  CGRectMake(60, 182, 220, 220);
+        CGRect saveSize =  CGRectMake(60, 182, 315, 315);
         CGRect captionSaveSize = CGRectMake(15, 403, 300, 30);
         [self.map1 setFrame:saveSize];
         [self.caption setFrame:captionSaveSize];
     }else if(!IS_IPHONE_5){
-        CGRect saveSize =  CGRectMake(60, 152, 220, 220);
+        CGRect saveSize =  CGRectMake(60, 152, 315, 315);
         CGRect captionSaveSize = CGRectMake(15, 370, 300, 30);
         [self.map1 setFrame:saveSize];
         [self.caption setFrame:captionSaveSize];
@@ -394,8 +393,8 @@ NSArray *validProducts;
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    [self setRoundedMapView:self.map1 toDiameter:260];
-    CGRect returnSize =  CGRectMake(30, 153, 260, 260);
+    [self setRoundedMapView:self.map1 toDiameter:315];
+    CGRect returnSize =  CGRectMake(30, 153, 4315, 315);
     CGRect captionReturnSize = CGRectMake(10, 421, 300, 30);
     [self.map1 setFrame:returnSize];
     [self.caption setFrame:captionReturnSize];
@@ -417,8 +416,8 @@ NSArray *validProducts;
         self.searchBubbleView.alpha=0;
         self.shareView.alpha = 0;
         [self.colourMenuView setCenter:CGPointMake(160, -40)];
-        [self setRoundedMapView:self.map1 toDiameter:200];
-            CGRect saveSize =  CGRectMake(70, 152, 200, 200);
+        [self setRoundedMapView:self.map1 toDiameter:315];
+            CGRect saveSize =  CGRectMake(70, 152, 315, 315);
             CGRect captionSaveSize = CGRectMake(15, 380, 300, 30);
             [self.map1 setFrame:saveSize];
             [self.caption setFrame:captionSaveSize];
@@ -434,8 +433,8 @@ NSArray *validProducts;
         UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-        [self setRoundedMapView:self.map1 toDiameter:240];
-        [self.map1 setFrame:CGRectMake(40, 120, 240, 240)];
+        [self setRoundedMapView:self.map1 toDiameter:315];
+        [self.map1 setFrame:CGRectMake(40, 120, 315, 315)];
         [self.caption setCenter:CGPointMake(160, 375)];
 
         self.saveButton.alpha = 1;
@@ -456,8 +455,8 @@ NSArray *validProducts;
             self.shareView.alpha = 0;
             
             [self.colourMenuView setCenter:CGPointMake(self.view.bounds.size.width/2, -40)];
-            [self setRoundedMapView:self.map1 toDiameter:400];
-            CGRect saveSize =  CGRectMake(185, 312, 400, 400);
+            [self setRoundedMapView:self.map1 toDiameter:500];
+            CGRect saveSize =  CGRectMake(185, 312, 500, 500);
             CGRect captionSaveSize = CGRectMake(234, 788, 300, 30);
             [self.map1 setFrame:saveSize];
             [self.caption setFrame:captionSaveSize];
@@ -600,10 +599,10 @@ NSArray *validProducts;
 
 - (IBAction)tapBeginButton {
     if (!IS_IPHONE_5) {
-        [self setRoundedMapView:self.map1 toDiameter:240];
-        [self.map1 setFrame:CGRectMake(40, 120, 240, 240)];
-        [self.caption setCenter:CGPointMake(160, 375)];
-        [self.searchBubbleView setCenter:CGPointMake(160, 105)];
+//        [self setRoundedMapView:self.map1 toDiameter:315];
+//        [self.map1 setFrame:CGRectMake(70, 120, 315, 315)];
+//        [self.caption setCenter:CGPointMake(160, 375)];
+//        [self.searchBubbleView setCenter:CGPointMake(160, 105)];
         //[self.map1 setCenter:CGPointMake(160, 250)];
     }
 
