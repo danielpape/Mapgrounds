@@ -72,9 +72,9 @@ NSArray *validProducts;
         [self removeButtonImages];
     }
     [defaults synchronize];
-    [self.caption setCenter:CGPointMake(160, 375)];
 
     purchased = YES;
+    NSLog(@"%f",self.map1.bounds.size.width);
     [self setRoundedMapView:self.map1 toDiameter:self.map1.bounds.size.width];
 
 }
@@ -190,11 +190,13 @@ NSArray *validProducts;
 }
 
 - (IBAction)tapEditText:(id)sender {
+    [sender becomeFirstResponder];
     CGPoint viewCenter = CGPointMake(self.view.center.x, (self.view.center.y-210));
     self.changeLocationButton.enabled = NO;
     self.changeBackgroundButton.enabled = NO;
     self.saveButton.enabled = NO;
     self.shareButton.enabled = NO;
+    self.introView.alpha = 0;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.15];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
@@ -242,7 +244,7 @@ NSArray *validProducts;
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     CGPoint colourViewCenter = [self.colourMenuView center];
     colourViewCenter.x = self.view.bounds.size.width/2;
-    colourViewCenter.y = 40;
+    colourViewCenter.y = 30;
     [self.colourMenuView setCenter:colourViewCenter];
     [UIView commitAnimations];
     colourMenuShowing = YES;
@@ -252,7 +254,7 @@ NSArray *validProducts;
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         CGPoint colourViewCenter = [self.colourMenuView center];
         colourViewCenter.x = self.view.bounds.size.width/2;
-        colourViewCenter.y = -40;
+        colourViewCenter.y = -60;
         [self.colourMenuView setCenter:colourViewCenter];
         [UIView commitAnimations];
         colourMenuShowing = NO;
@@ -362,8 +364,6 @@ NSArray *validProducts;
 }
 
 -(IBAction)saveScreen{
-    if(IS_IPHONE_5) {
-        NSLog(@"iphone 5 method");
     self.saveButton.alpha = 0;
     self.changeBackgroundButton.alpha = 0;
     self.changeLocationButton.alpha=0;
@@ -371,19 +371,7 @@ NSArray *validProducts;
     self.searchBubbleView.alpha=0;
     [self.shareView setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height+self.shareView.bounds.size.height)];
     [self.colourMenuView setCenter:CGPointMake(self.view.bounds.size.width/2, -40)];
-    [self setRoundedMapView:self.map1 toDiameter:315];
-    if(IS_IPHONE_5){
-        CGRect saveSize =  CGRectMake(60, 182, 315, 315);
-        CGRect captionSaveSize = CGRectMake(15, 403, 300, 30);
-        [self.map1 setFrame:saveSize];
-        [self.caption setFrame:captionSaveSize];
-    }else if(!IS_IPHONE_5){
-        CGRect saveSize =  CGRectMake(60, 152, 315, 315);
-        CGRect captionSaveSize = CGRectMake(15, 370, 300, 30);
-        [self.map1 setFrame:saveSize];
-        [self.caption setFrame:captionSaveSize];
-    }
-    if ([self.caption.text  isEqual: @""]) {
+        if ([self.caption.text  isEqual: @""]) {
         self.caption.alpha = 0;
     }
     UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0.0);
@@ -393,11 +381,6 @@ NSArray *validProducts;
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    [self setRoundedMapView:self.map1 toDiameter:315];
-    CGRect returnSize =  CGRectMake(30, 153, 4315, 315);
-    CGRect captionReturnSize = CGRectMake(10, 421, 300, 30);
-    [self.map1 setFrame:returnSize];
-    [self.caption setFrame:captionReturnSize];
     
     self.saveButton.alpha = 1;
     self.changeBackgroundButton.alpha = 1;
@@ -407,83 +390,6 @@ NSArray *validProducts;
     if(searchBubbleShowing){
     self.searchBubbleView.alpha = 1;
     }
-    }else if(IS_IPHONE_5 == NO && IS_IPAD == NO){
-        NSLog(@"iphone 4 method");
-        self.saveButton.alpha = 0;
-        self.changeBackgroundButton.alpha = 0;
-        self.changeLocationButton.alpha=0;
-        self.shareButton.alpha = 0;
-        self.searchBubbleView.alpha=0;
-        self.shareView.alpha = 0;
-        [self.colourMenuView setCenter:CGPointMake(160, -40)];
-        [self setRoundedMapView:self.map1 toDiameter:315];
-            CGRect saveSize =  CGRectMake(70, 152, 315, 315);
-            CGRect captionSaveSize = CGRectMake(15, 380, 300, 30);
-            [self.map1 setFrame:saveSize];
-            [self.caption setFrame:captionSaveSize];
-        
-        if ([self.caption.text  isEqual: @""]) {
-            self.caption.alpha = 0;
-        }
-
-        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0.0);
-        
-        [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
-        
-        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-        [self setRoundedMapView:self.map1 toDiameter:315];
-        [self.map1 setFrame:CGRectMake(40, 120, 315, 315)];
-        [self.caption setCenter:CGPointMake(160, 375)];
-
-        self.saveButton.alpha = 1;
-        self.changeBackgroundButton.alpha = 1;
-        self.changeLocationButton.alpha=1;
-        self.caption.alpha = 1;
-        self.shareButton.alpha = 1;
-        if(searchBubbleShowing){
-            self.searchBubbleView.alpha = 1;
-        }
-    }else if(IS_IPAD){
-            NSLog(@"ipad method");
-            self.saveButton.alpha = 0;
-            self.changeBackgroundButton.alpha = 0;
-            self.changeLocationButton.alpha=0;
-            self.shareButton.alpha = 0;
-            self.searchBubbleView.alpha=0;
-            self.shareView.alpha = 0;
-            
-            [self.colourMenuView setCenter:CGPointMake(self.view.bounds.size.width/2, -40)];
-            [self setRoundedMapView:self.map1 toDiameter:500];
-            CGRect saveSize =  CGRectMake(185, 312, 500, 500);
-            CGRect captionSaveSize = CGRectMake(234, 788, 300, 30);
-            [self.map1 setFrame:saveSize];
-            [self.caption setFrame:captionSaveSize];
-            if ([self.caption.text  isEqual: @""]) {
-                self.caption.alpha = 0;
-            }
-            
-            UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0.0);
-            [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
-            UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-            
-            [self setRoundedMapView:self.map1 toDiameter:500];
-            [self.map1 setFrame:CGRectMake(135, 262, 500, 500)];
-            [self.caption setCenter:CGPointMake(384, 800)];
-            
-            self.saveButton.alpha = 1;
-            self.changeBackgroundButton.alpha = 1;
-            self.changeLocationButton.alpha=1;
-            self.caption.alpha = 1;
-            self.shareButton.alpha = 1;
-            if(searchBubbleShowing){
-                self.searchBubbleView.alpha = 1;
-            }
-        }
-    
     [self presentSaveScreen];
     
 }
@@ -598,14 +504,6 @@ NSArray *validProducts;
 }
 
 - (IBAction)tapBeginButton {
-    if (!IS_IPHONE_5) {
-//        [self setRoundedMapView:self.map1 toDiameter:315];
-//        [self.map1 setFrame:CGRectMake(70, 120, 315, 315)];
-//        [self.caption setCenter:CGPointMake(160, 375)];
-//        [self.searchBubbleView setCenter:CGPointMake(160, 105)];
-        //[self.map1 setCenter:CGPointMake(160, 250)];
-    }
-
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
